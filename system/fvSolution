@@ -88,7 +88,7 @@ PIMPLE
     consistent        yes;
     momentumPredictor yes;
     nCorrectors     2;
-    nOuterCorrectors 1;
+    nOuterCorrectors 2;
     nNonOrthogonalCorrectors 2;
 }
 
