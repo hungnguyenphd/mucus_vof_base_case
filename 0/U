@@ -43,7 +43,7 @@ boundaryField
     {
         type            noSlip;
     }
-    exit_63.*
+    "exit_63.*"
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_63;
@@ -61,7 +61,7 @@ boundaryField
     volumetricFlowRate      $fexit_67;
 }
 
-"exit_69.*""
+"exit_69.*"
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_69;
