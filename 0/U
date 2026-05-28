@@ -29,7 +29,7 @@ mucus_in #calc "$tot_mucus_in/36.0";
 //air_in #calc "$tot_air_in/36.0";
 boundaryField
 {
-    entry.1
+    entry.*
     {
         type            inletOutlet;
         inletValue      uniform (0 0 0);
@@ -43,217 +43,217 @@ boundaryField
     {
         type            noSlip;
     }
-    exit_63.1
+    exit_63.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_63;
 }
 
-exit_65.1
+exit_65.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_65;
 }
 
-exit_67.1
+exit_67.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_67;
 }
 
-exit_69.1
+exit_69.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_69;
 }
 
-exit_71.1
+exit_71.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_71;
 }
 
-exit_73.1
+exit_73.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_73;
 }
 
-exit_75.1
+exit_75.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_75;
 }
 
-exit_77.1
+exit_77.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_77;
 }
 
-exit_79.1
+exit_79.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_79;
 }
 
-exit_81.1
+exit_81.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_81;
 }
 
-exit_83.1
+exit_83.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_83;
 }
 
-exit_85.1
+exit_85.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_85;
 }
 
-exit_87.1
+exit_87.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_87;
 }
 
-exit_89.1
+exit_89.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_89;
 }
 
-exit_91.1
+exit_91.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_91;
 }
 
-exit_93.1
+exit_93.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_93;
 }
 
-exit_95.1
+exit_95.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_95;
 }
 
-exit_97.1
+exit_97.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_97;
 }
 
-exit_99.1
+exit_99.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_99;
 }
 
-exit_101.1
+exit_101.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_101;
 }
 
-exit_103.1
+exit_103.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_103;
 }
 
-exit_105.1
+exit_105.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_105;
 }
 
-exit_107.1
+exit_107.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_107;
 }
 
-exit_109.1
+exit_109.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_109;
 }
 
-exit_111.1
+exit_111.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_111;
 }
 
-exit_113.1
+exit_113.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_113;
 }
 
-exit_115.1
+exit_115.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_115;
 }
 
-exit_117.1
+exit_117.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_117;
 }
 
-exit_119.1
+exit_119.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_119;
 }
 
-exit_121.1
+exit_121.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_121;
 }
 
-exit_123.1
+exit_123.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_123;
 }
 
-exit_125.1
+exit_125.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_125;
 }
 
-exit_127.1
+exit_127.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_127;
 }
 
-exit_129.1
+exit_129.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_129;
 }
 
-exit_131.1
+exit_131.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_131;
 }
 
-exit_133.1
+exit_133.*
 {
     type                    flowRateInletVelocity;
     volumetricFlowRate      $fexit_133;
