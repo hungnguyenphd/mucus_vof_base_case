@@ -15,21 +15,21 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-// multiphaseStabilizedTurbulence1
-// {
-//     // Mandatory entries (unmodifiable)
-//     type                multiphaseStabilizedTurbulence;
-//     active              yes;
-//     multiphaseStabilizedTurbulenceCoeffs
-//     {
-//         // Optional entries (unmodifiable)
-//         Cmu             0.09;  // from k-epsilon model
-//         C               1.50;  // from k-omega model
-//         lambda2         0.1;   // A value of 0 sets the nut correction to 0
-//         alpha           1.36;  // 1/Prt
-//     }
-//     // Mandatory/Optional (inherited) entries
-// }
+multiphaseStabilizedTurbulence1
+{
+    // Mandatory entries (unmodifiable)
+    type                multiphaseStabilizedTurbulence;
+    active              yes;
+    multiphaseStabilizedTurbulenceCoeffs
+    {
+        // Optional entries (unmodifiable)
+        Cmu             0.09;  // from k-epsilon model
+        C               1.50;  // kOmegaSST: beta1/(betaStar*gamma1)
+        lambda2         0.1;   // A value of 0 sets the nut correction to 0
+        alpha           1.36;  // 1/Prt
+    }
+    // Mandatory/Optional (inherited) entries
+}
 
 // ************************************************************************* //
 // Notes:
