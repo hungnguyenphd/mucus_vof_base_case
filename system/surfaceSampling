@@ -1,0 +1,81 @@
+surfaceSampling
+{
+    type            surfaces;
+    libs            (sampling);
+    writeControl    onEnd;
+
+    interpolationScheme cellPoint;
+
+    surfaceFormat ensight;
+
+    formatOptions
+    {
+        default { format ascii; }
+    }
+    // Fields to be sampled
+    fields
+    (
+        U
+        alpha.air
+   );
+
+
+    surfaces
+    (
+        fBi
+        {
+            type        cuttingPlane;
+            planeType   pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0.171422476278 0.19624917099 -0.261117414314);
+                normal  (2.329316204863794E-06 -0.0003088587591727256 0.000130547875363387);
+            }
+            interpolation   true;
+        }
+        tra
+        {
+            type        cuttingPlane;
+            planeType   pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0.1765540003223882 0.1936573478956412 -0.2625211469543252);
+                normal  (0.9991651407475313 -0.03446000078216099 0.02194378866695002);      
+            }
+            interpolation   true;
+        }
+        tra_c
+        {
+            type        cuttingPlane;
+            planeType   pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0.1822106623638462 0.1799090636605011 -0.3137953590358312);
+                normal  (0.005756390813523442 -0.4695149895355588 -0.8829057359459311);
+            }
+            interpolation   true;
+        }
+	LMB
+	{
+            type        cuttingPlane;
+            planeType   pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0.2024355591013019 0.2036265778288202 -0.2552293649891842);
+                normal  (-1.180136419864384E-05 -1.923690789396383E-06 -1.140534464782338E-05);
+            }
+            interpolation   true;
+        }
+	RMB
+        {
+            type        cuttingPlane;
+            planeType   pointAndNormal;
+            pointAndNormalDict
+            {
+                point   (0.1734822065673569 0.1983205930808269 -0.2638408056381547);
+                normal  (0.8000227406954569 -0.5126600682184272 -0.3116781494176448);
+            }
+            interpolation   true;
+        }
+    );
+}

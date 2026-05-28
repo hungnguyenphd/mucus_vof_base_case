@@ -1,0 +1,51 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+phases          (air mucus);
+
+poise 200;
+mu #calc "$poise*0.1";
+nu #calc "$mu/970.0";
+
+mucus
+{
+    transportModel  powerLawClamped;
+
+    powerLawClampedCoeffs
+    {
+        k       2.598e-3;   // = 2.52 Pa·s^n / 970 kg/m^3
+        n       0.15;
+        nuMin   1.031e-3;   // = 1.0  Pa·s   / 970 kg/m^3  (COPD lower bound)
+        nuMax   1.526e-2;   // = 14.8 Pa·s   / 970 kg/m^3  (COPD upper bound)
+	gammaMin  gammaMin  [0 0 -1 0 0 0 0]  0.5;
+        gammaMax  gammaMax  [0 0 -1 0 0 0 0]  10;
+    }
+
+    rho     970;	
+}
+
+air
+{
+    transportModel  Newtonian;
+    nu              1.7e-05;
+    rho             1.2;
+}
+
+sigma           0.032;
+
+
+// ************************************************************************* //

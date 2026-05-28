@@ -1,0 +1,268 @@
+entry	     3.333330E-04;
+exit_63	    -9.329894E-07;
+exit_65	    -1.544124E-06;
+exit_67	    -1.155866E-05;
+exit_69	    -2.523047E-05;
+exit_71	    -6.576163E-06;
+exit_73	    -4.589469E-06;
+exit_75	    -1.773384E-05;
+exit_77	    -1.495659E-05;
+exit_79	    -4.242346E-06;
+exit_81	    -8.596745E-06;
+exit_83	    -1.852236E-06;
+exit_85	    -2.559793E-06;
+exit_87	    -9.351027E-06;
+exit_89	    -4.742605E-06;
+exit_91	    -4.780825E-07;
+exit_93	    -2.896866E-06;
+exit_95	    -2.715600E-06;
+exit_97	    -6.177750E-06;
+exit_99	    -5.115168E-06;
+exit_101	-2.847947E-06;
+exit_103	-2.435949E-05;
+exit_105	-1.164264E-05;
+exit_107	-3.147811E-05;
+exit_109	-2.354678E-05;
+exit_111	-2.221246E-05;
+exit_113	-1.489375E-05;
+exit_115	-1.757489E-05;
+exit_117	-1.150247E-05;
+exit_119	-9.920130E-06;
+exit_121	-4.201596E-06;
+exit_123	-1.360760E-06;
+exit_125	-2.058969E-06;
+exit_127	-1.146070E-05;
+exit_129	-7.447633E-06;
+exit_131	-1.608482E-06;
+exit_133	-3.365683E-06;
+
+entry_diam  	2.019511E-02;
+exit_diam_63	2.383150E-03;
+exit_diam_65	3.518260E-03;
+exit_diam_67	3.762092E-03;
+exit_diam_69	6.571968E-03;
+exit_diam_71	3.770360E-03;
+exit_diam_73	2.953104E-03;
+exit_diam_75	5.427320E-03;
+exit_diam_77	4.615580E-03;
+exit_diam_79	3.169554E-03;
+exit_diam_81	4.733766E-03;
+exit_diam_83	4.240842E-03;
+exit_diam_85	3.069008E-03;
+exit_diam_87	6.871820E-03;
+exit_diam_89	7.123724E-03;
+exit_diam_91	5.359822E-03;
+exit_diam_93	6.843244E-03;
+exit_diam_95	2.536914E-03;
+exit_diam_97	3.491260E-03;
+exit_diam_99	5.490624E-03;
+exit_diam_101	3.018612E-03;
+exit_diam_103	4.792702E-03;
+exit_diam_105	3.753824E-03;
+exit_diam_107	6.820670E-03;
+exit_diam_109	6.820670E-03;
+exit_diam_111	6.927456E-03;
+exit_diam_113	6.927456E-03;
+exit_diam_115	4.876430E-03;
+exit_diam_117	3.819476E-03;
+exit_diam_119	4.167060E-03;
+exit_diam_121	3.516732E-03;
+exit_diam_123	3.662990E-03;
+exit_diam_125	5.453134E-03;
+exit_diam_127	5.614924E-03;
+exit_diam_129	7.763736E-03;
+exit_diam_131	6.778006E-03;
+exit_diam_133	3.923644E-03;
+
+entry_L    #calc "0.07*$entry_diam";
+exit_L_63  #calc "0.07*$exit_diam_63";
+exit_L_65  #calc "0.07*$exit_diam_65";
+exit_L_67  #calc "0.07*$exit_diam_67";
+exit_L_69  #calc "0.07*$exit_diam_69";
+exit_L_71  #calc "0.07*$exit_diam_71";
+exit_L_73  #calc "0.07*$exit_diam_73";
+exit_L_75  #calc "0.07*$exit_diam_75";
+exit_L_77  #calc "0.07*$exit_diam_77";
+exit_L_79  #calc "0.07*$exit_diam_79";
+exit_L_81  #calc "0.07*$exit_diam_81";
+exit_L_83  #calc "0.07*$exit_diam_83";
+exit_L_85  #calc "0.07*$exit_diam_85";
+exit_L_87  #calc "0.07*$exit_diam_87";
+exit_L_89  #calc "0.07*$exit_diam_89";
+exit_L_91  #calc "0.07*$exit_diam_91";
+exit_L_93  #calc "0.07*$exit_diam_93";
+exit_L_95  #calc "0.07*$exit_diam_95";
+exit_L_97  #calc "0.07*$exit_diam_97";
+exit_L_99  #calc "0.07*$exit_diam_99";
+exit_L_101 #calc "0.07*$exit_diam_101";
+exit_L_103 #calc "0.07*$exit_diam_103";
+exit_L_105 #calc "0.07*$exit_diam_105";
+exit_L_107 #calc "0.07*$exit_diam_107";
+exit_L_109 #calc "0.07*$exit_diam_109";
+exit_L_111 #calc "0.07*$exit_diam_111";
+exit_L_113 #calc "0.07*$exit_diam_113";
+exit_L_115 #calc "0.07*$exit_diam_115";
+exit_L_117 #calc "0.07*$exit_diam_117";
+exit_L_119 #calc "0.07*$exit_diam_119";
+exit_L_121 #calc "0.07*$exit_diam_121";
+exit_L_123 #calc "0.07*$exit_diam_123";
+exit_L_125 #calc "0.07*$exit_diam_125";
+exit_L_127 #calc "0.07*$exit_diam_127";
+exit_L_129 #calc "0.07*$exit_diam_129";
+exit_L_131 #calc "0.07*$exit_diam_131";
+exit_L_133 #calc "0.07*$exit_diam_133";
+
+pi 3.1415926;
+
+area_63   #calc "0.25*$pi*$exit_diam_63*$exit_diam_63";
+area_65   #calc "0.25*$pi*$exit_diam_65*$exit_diam_65";
+area_67   #calc "0.25*$pi*$exit_diam_67*$exit_diam_67";
+area_69   #calc "0.25*$pi*$exit_diam_69*$exit_diam_69";
+area_71   #calc "0.25*$pi*$exit_diam_71*$exit_diam_71";
+area_73   #calc "0.25*$pi*$exit_diam_73*$exit_diam_73";
+area_75   #calc "0.25*$pi*$exit_diam_75*$exit_diam_75";
+area_77   #calc "0.25*$pi*$exit_diam_77*$exit_diam_77";
+area_79   #calc "0.25*$pi*$exit_diam_79*$exit_diam_79";
+area_81   #calc "0.25*$pi*$exit_diam_81*$exit_diam_81";
+area_83   #calc "0.25*$pi*$exit_diam_83*$exit_diam_83";
+area_85   #calc "0.25*$pi*$exit_diam_85*$exit_diam_85";
+area_87   #calc "0.25*$pi*$exit_diam_87*$exit_diam_87";
+area_89   #calc "0.25*$pi*$exit_diam_89*$exit_diam_89";
+area_91   #calc "0.25*$pi*$exit_diam_91*$exit_diam_91";
+area_93   #calc "0.25*$pi*$exit_diam_93*$exit_diam_93";
+area_95   #calc "0.25*$pi*$exit_diam_95*$exit_diam_95";
+area_97   #calc "0.25*$pi*$exit_diam_97*$exit_diam_97";
+area_99   #calc "0.25*$pi*$exit_diam_99*$exit_diam_99";
+area_101  #calc "0.25*$pi*$exit_diam_101*$exit_diam_101";
+area_103  #calc "0.25*$pi*$exit_diam_103*$exit_diam_103";
+area_105  #calc "0.25*$pi*$exit_diam_105*$exit_diam_105";
+area_107  #calc "0.25*$pi*$exit_diam_107*$exit_diam_107";
+area_109  #calc "0.25*$pi*$exit_diam_109*$exit_diam_109";
+area_111  #calc "0.25*$pi*$exit_diam_111*$exit_diam_111";
+area_113  #calc "0.25*$pi*$exit_diam_113*$exit_diam_113";
+area_115  #calc "0.25*$pi*$exit_diam_115*$exit_diam_115";
+area_117  #calc "0.25*$pi*$exit_diam_117*$exit_diam_117";
+area_119  #calc "0.25*$pi*$exit_diam_119*$exit_diam_119";
+area_121  #calc "0.25*$pi*$exit_diam_121*$exit_diam_121";
+area_123  #calc "0.25*$pi*$exit_diam_123*$exit_diam_123";
+area_125  #calc "0.25*$pi*$exit_diam_125*$exit_diam_125";
+area_127  #calc "0.25*$pi*$exit_diam_127*$exit_diam_127";
+area_129  #calc "0.25*$pi*$exit_diam_129*$exit_diam_129";
+area_131  #calc "0.25*$pi*$exit_diam_131*$exit_diam_131";
+area_133  #calc "0.25*$pi*$exit_diam_133*$exit_diam_133";
+
+
+V_63   #calc "$exit_63/$area_63";   //m/s
+V_65   #calc "$exit_65/$area_65";   //m/s
+V_67   #calc "$exit_67/$area_67";   //m/s
+V_69   #calc "$exit_69/$area_69";   //m/s
+V_71   #calc "$exit_71/$area_71";   //m/s
+V_73   #calc "$exit_73/$area_73";   //m/s
+V_75   #calc "$exit_75/$area_75";   //m/s
+V_77   #calc "$exit_77/$area_77";   //m/s
+V_79   #calc "$exit_79/$area_79";   //m/s
+V_81   #calc "$exit_81/$area_81";   //m/s
+V_83   #calc "$exit_83/$area_83";   //m/s
+V_85   #calc "$exit_85/$area_85";   //m/s
+V_87   #calc "$exit_87/$area_87";   //m/s
+V_89   #calc "$exit_89/$area_89";   //m/s
+V_91   #calc "$exit_91/$area_91";   //m/s
+V_93   #calc "$exit_93/$area_93";   //m/s
+V_95   #calc "$exit_95/$area_95";   //m/s
+V_97   #calc "$exit_97/$area_97";   //m/s
+V_99   #calc "$exit_99/$area_99";   //m/s
+V_101  #calc "$exit_101/$area_101"; //m/s
+V_103  #calc "$exit_103/$area_103"; //m/s
+V_105  #calc "$exit_105/$area_105"; //m/s
+V_107  #calc "$exit_107/$area_107"; //m/s
+V_109  #calc "$exit_109/$area_109"; //m/s
+V_111  #calc "$exit_111/$area_111"; //m/s
+V_113  #calc "$exit_113/$area_113"; //m/s
+V_115  #calc "$exit_115/$area_115"; //m/s
+V_117  #calc "$exit_117/$area_117"; //m/s
+V_119  #calc "$exit_119/$area_119"; //m/s
+V_121  #calc "$exit_121/$area_121"; //m/s
+V_123  #calc "$exit_123/$area_123"; //m/s
+V_125  #calc "$exit_125/$area_125"; //m/s
+V_127  #calc "$exit_127/$area_127"; //m/s
+V_129  #calc "$exit_129/$area_129"; //m/s
+V_131  #calc "$exit_131/$area_131"; //m/s
+V_133  #calc "$exit_133/$area_133"; //m/s
+
+
+I #calc "2.0/100.0";
+Cmu 0.09;
+
+k_63   #calc "1.5*sqr($V_63)*sqr($I)";
+k_65   #calc "1.5*sqr($V_65)*sqr($I)";
+k_67   #calc "1.5*sqr($V_67)*sqr($I)";
+k_69   #calc "1.5*sqr($V_69)*sqr($I)";
+k_71   #calc "1.5*sqr($V_71)*sqr($I)";
+k_73   #calc "1.5*sqr($V_73)*sqr($I)";
+k_75   #calc "1.5*sqr($V_75)*sqr($I)";
+k_77   #calc "1.5*sqr($V_77)*sqr($I)";
+k_79   #calc "1.5*sqr($V_79)*sqr($I)";
+k_81   #calc "1.5*sqr($V_81)*sqr($I)";
+k_83   #calc "1.5*sqr($V_83)*sqr($I)";
+k_85   #calc "1.5*sqr($V_85)*sqr($I)";
+k_87   #calc "1.5*sqr($V_87)*sqr($I)";
+k_89   #calc "1.5*sqr($V_89)*sqr($I)";
+k_91   #calc "1.5*sqr($V_91)*sqr($I)";
+k_93   #calc "1.5*sqr($V_93)*sqr($I)";
+k_95   #calc "1.5*sqr($V_95)*sqr($I)";
+k_97   #calc "1.5*sqr($V_97)*sqr($I)";
+k_99   #calc "1.5*sqr($V_99)*sqr($I)";
+k_101  #calc "1.5*sqr($V_101)*sqr($I)";
+k_103  #calc "1.5*sqr($V_103)*sqr($I)";
+k_105  #calc "1.5*sqr($V_105)*sqr($I)";
+k_107  #calc "1.5*sqr($V_107)*sqr($I)";
+k_109  #calc "1.5*sqr($V_109)*sqr($I)";
+k_111  #calc "1.5*sqr($V_111)*sqr($I)";
+k_113  #calc "1.5*sqr($V_113)*sqr($I)";
+k_115  #calc "1.5*sqr($V_115)*sqr($I)";
+k_117  #calc "1.5*sqr($V_117)*sqr($I)";
+k_119  #calc "1.5*sqr($V_119)*sqr($I)";
+k_121  #calc "1.5*sqr($V_121)*sqr($I)";
+k_123  #calc "1.5*sqr($V_123)*sqr($I)";
+k_125  #calc "1.5*sqr($V_125)*sqr($I)";
+k_127  #calc "1.5*sqr($V_127)*sqr($I)";
+k_129  #calc "1.5*sqr($V_129)*sqr($I)";
+k_131  #calc "1.5*sqr($V_131)*sqr($I)";
+k_133  #calc "1.5*sqr($V_133)*sqr($I)";
+
+omega_63   #calc "pow($k_63,0.5)/($exit_L_63*pow($Cmu,0.25))";omega_63   #calc "pow($k_63,0.5)/($exit_L_63*pow($Cmu,0.25))";
+omega_65   #calc "pow($k_65,0.5)/($exit_L_65*pow($Cmu,0.25))";
+omega_67   #calc "pow($k_67,0.5)/($exit_L_67*pow($Cmu,0.25))";
+omega_69   #calc "pow($k_69,0.5)/($exit_L_69*pow($Cmu,0.25))";
+omega_71   #calc "pow($k_71,0.5)/($exit_L_71*pow($Cmu,0.25))";
+omega_73   #calc "pow($k_73,0.5)/($exit_L_73*pow($Cmu,0.25))";
+omega_75   #calc "pow($k_75,0.5)/($exit_L_75*pow($Cmu,0.25))";
+omega_77   #calc "pow($k_77,0.5)/($exit_L_77*pow($Cmu,0.25))";
+omega_79   #calc "pow($k_79,0.5)/($exit_L_79*pow($Cmu,0.25))";
+omega_81   #calc "pow($k_81,0.5)/($exit_L_81*pow($Cmu,0.25))";
+omega_83   #calc "pow($k_83,0.5)/($exit_L_83*pow($Cmu,0.25))";
+omega_85   #calc "pow($k_85,0.5)/($exit_L_85*pow($Cmu,0.25))";
+omega_87   #calc "pow($k_87,0.5)/($exit_L_87*pow($Cmu,0.25))";
+omega_89   #calc "pow($k_89,0.5)/($exit_L_89*pow($Cmu,0.25))";
+omega_91   #calc "pow($k_91,0.5)/($exit_L_91*pow($Cmu,0.25))";
+omega_93   #calc "pow($k_93,0.5)/($exit_L_93*pow($Cmu,0.25))";
+omega_95   #calc "pow($k_95,0.5)/($exit_L_95*pow($Cmu,0.25))";
+omega_97   #calc "pow($k_97,0.5)/($exit_L_97*pow($Cmu,0.25))";
+omega_99   #calc "pow($k_99,0.5)/($exit_L_99*pow($Cmu,0.25))";
+omega_101  #calc "pow($k_101,0.5)/($exit_L_101*pow($Cmu,0.25))";
+omega_103  #calc "pow($k_103,0.5)/($exit_L_103*pow($Cmu,0.25))";
+omega_105  #calc "pow($k_105,0.5)/($exit_L_105*pow($Cmu,0.25))";
+omega_107  #calc "pow($k_107,0.5)/($exit_L_107*pow($Cmu,0.25))";
+omega_109  #calc "pow($k_109,0.5)/($exit_L_109*pow($Cmu,0.25))";
+omega_111  #calc "pow($k_111,0.5)/($exit_L_111*pow($Cmu,0.25))";
+omega_113  #calc "pow($k_113,0.5)/($exit_L_113*pow($Cmu,0.25))";
+omega_115  #calc "pow($k_115,0.5)/($exit_L_115*pow($Cmu,0.25))";
+omega_117  #calc "pow($k_117,0.5)/($exit_L_117*pow($Cmu,0.25))";
+omega_119  #calc "pow($k_119,0.5)/($exit_L_119*pow($Cmu,0.25))";
+omega_121  #calc "pow($k_121,0.5)/($exit_L_121*pow($Cmu,0.25))";
+omega_123  #calc "pow($k_123,0.5)/($exit_L_123*pow($Cmu,0.25))";
+omega_125  #calc "pow($k_125,0.5)/($exit_L_125*pow($Cmu,0.25))";
+omega_127  #calc "pow($k_127,0.5)/($exit_L_127*pow($Cmu,0.25))";
+omega_129  #calc "pow($k_129,0.5)/($exit_L_129*pow($Cmu,0.25))";
+omega_131  #calc "pow($k_131,0.5)/($exit_L_131*pow($Cmu,0.25))";
+omega_133  #calc "pow($k_133,0.5)/($exit_L_133*pow($Cmu,0.25))";

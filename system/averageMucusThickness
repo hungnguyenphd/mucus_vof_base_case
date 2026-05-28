@@ -1,0 +1,29 @@
+averageMucusThickness
+{
+    libs            (utilityFunctionObjects);
+    type            coded;
+    name            averageMucusThickness;
+    //timeStart       1;
+    writeControl    timeStep;
+    writeInterval   1;
+
+    codeWrite
+    #{
+
+        const auto& alpha =
+            mesh().lookupObject<volScalarField>("alpha.mucus");
+
+        //Alpha volume
+        auto alpha_ave = alpha.weightedAverage(mesh().Vsc());
+
+        //Tube diameter
+        auto D = 2.019511E-02; //m
+
+        //Average mucus thickness
+        auto hl = (D/2)*(1-sqrt(1 - alpha_ave)); //m
+
+        Info<< "Average mucus thickness = " << 1000*hl << " mm"
+            << endl;
+
+    #};
+}

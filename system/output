@@ -1,0 +1,56 @@
+output
+{
+    libs            (utilityFunctionObjects);
+    type            coded;
+    name            output;
+    //timeStart       1;
+    writeControl    timeStep;
+    writeInterval   1;
+
+    codeWrite
+    #{
+	const auto& U =
+            mesh().lookupObject<volVectorField>("U");
+
+    const auto& alpha =
+            mesh().lookupObject<volScalarField>("alpha.mucus");
+	
+	//Average superficial velocity
+    const volScalarField weight = 1-(pos(alpha-0.5));
+
+    scalar sumU = 0;
+    scalar sumV = 0;
+
+    forAll (U, I)
+    {
+        sumU += alpha[I]*mesh().V()[I]*mag(U[I]);
+        sumV += mesh().V()[I];
+    }
+
+    auto U_mucus = sumU/sumV;
+
+    Info<< "Average Mucus Velocity = " << 1e4*U_mucus << endl;
+	//auto U_mucus = U.weightedAverage(mesh().Vsc());
+
+    //Alpha volume
+    auto alpha_ave = alpha.weightedAverage(mesh().V());
+
+    //Tube diameter
+    auto D = 10.0/1000; //m
+
+	//Average mucus velocity
+	//auto U_mucus = mag(U_ave)/alpha_ave; //m/s
+
+    //Average mucus thickness
+    auto hl = (D/2)*(1-sqrt(1 - alpha_ave)); //m
+
+    Info<< "Volume-average alpha.mucus = " << alpha_ave << endl;
+    
+	//Info<< "Average velocity = " << U_mucus << " m/s"
+    //        << endl;
+
+        Info<< "Average mucus thickness = " << 1000*hl << " mm"
+            << endl;
+
+    #};
+}

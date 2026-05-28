@@ -1,0 +1,228 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    // {
+    //     name    prisms;
+    //     type    cellSet;
+    //     action  new;
+    //     source  shapeToCell;
+    //     shape   prism;
+    // }
+
+    // {
+    //     name    prisms;
+    //     type    cellSet;
+    //     action  new;
+    //     source  shapeToCell;
+    //     shape   prism;
+    // }
+
+    {
+        name    f1;
+        type    faceSet;
+        action  new;
+        source  patchToFace;
+        patches ("wall.*");
+    }
+
+    {
+        name    c1;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f1;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+
+    {
+        name    f2;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c1;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c2;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f2;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+
+    {
+        name    f3;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c2;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c3;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f3;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+
+    {
+        name    f4;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c3;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c4;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f4;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+
+    {
+        name    f5;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c4;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c5;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f5;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+/*
+    {
+        name    f6;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c5;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c6;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f6;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }
+
+    {
+        name    f7;
+        type    faceSet;
+        action  new;
+
+        source  cellToFace;
+        set     c6;             // Name of cellSet
+
+        option  all;            // All faces of cells
+        //option  both;         // Only faces with owner+neighbour in cellSet
+        //option  outside;      // Only faces with either owner or neighbour
+                                // in cellSet
+    }
+
+    {
+        name    c7;
+        type    cellSet;
+        action  new;
+        source  faceToCell;
+        set     f7;             // Name of faceSet
+        //- selection option (mandatory)
+        option any;             // cell with any face in faceSet
+        // option all;          // cell with all faces in faceSet
+        // option neighbour;    // cell with neighbour in faceSet
+        // option owner;        // cell with owner in faceSet
+    }*/
+
+    {
+        name    nearWallZone;
+        type    cellZoneSet;
+        action  new;
+
+        source  setToCellZone;
+        set     c5;
+    }
+);
+
+// ************************************************************************* //

@@ -1,0 +1,85 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2406                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     interFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         1;
+
+deltaT          1e-7;
+
+writeControl    adjustable;
+
+writeInterval   0.001;
+
+purgeWrite      0;
+
+writeFormat     binary;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable yes;
+
+adjustTimeStep  yes;
+
+maxCo           0.8;
+
+maxAlphaCo      0.8;
+
+maxDeltaT       1;
+
+libs ("libpowerLawClamped.so");
+functions
+{
+    #include "surfaceSampling";
+    residuals
+    {
+        type            solverInfo;
+        libs            (utilityFunctionObjects);
+        fields          (U p_rgh alpha.air);
+    }
+}
+
+OptimisationSwitches
+{
+    //- Parallel IO file handler
+    // uncollated (default), collated or masterUncollated
+    fileHandler collated;
+
+    //- collated: thread buffer size for queued file writes.
+    // If set to 0 or not sufficient for the file size threading is not used.
+    // Default: 2e9
+    maxThreadFileBufferSize 2e9;
+
+    //- masterUncollated: non-blocking buffer size.
+    // If the file exceeds this buffer size scheduled transfer is used.
+    // Default: 2e9
+    maxMasterFileBufferSize 2e9;
+}
+
+
+// ************************************************************************* //

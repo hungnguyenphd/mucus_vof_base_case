@@ -1,0 +1,287 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2406                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    arch        "LSB;label=32;scalar=64";
+    class       volScalarField;
+    location    "0";
+    object      omega;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+#include        "include/bc_values"
+
+#include        "include/diameters"
+
+dimensions      [ 0 0 -1 0 0 0 0 ];
+
+internalField   uniform 10;
+
+boundaryField
+{
+    entry.1
+    {
+        type            zeroGradient;
+    }
+    "exit_63.*|mucus_exit_165.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_63;
+        value           uniform $omega_63;
+    }
+    "exit_65.*|mucus_exit_163.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_65;
+        value           uniform $omega_65;
+    }
+
+    "exit_67.*|mucus_exit_145.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_67;
+        value           uniform $omega_67;
+    }
+
+    "exit_69.*|mucus_exit_143.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_69;
+        value           uniform $omega_69;
+    }
+
+    "exit_71.*|mucus_exit_147.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_71;
+        value           uniform $omega_71;
+    }
+
+    "exit_73.*|mucus_exit_149.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_73;
+        value           uniform $omega_73;
+    }
+
+    "exit_75.*|mucus_exit_137.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_75;
+        value           uniform $omega_75;
+    }
+
+    "exit_77.*|mucus_exit_135.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_77;
+        value           uniform $omega_77;
+    }
+
+    "exit_79.*|mucus_exit_141.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_79;
+        value           uniform $omega_79;
+    }
+
+    "exit_81.*|mucus_exit_139.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_81;
+        value           uniform $omega_81;
+    }
+
+    "exit_83.*|mucus_exit_155.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_83;
+        value           uniform $omega_83;
+    }
+
+    "exit_85.*|mucus_exit_157.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_85;
+        value           uniform $omega_85;
+    }
+
+    "exit_87.*|mucus_exit_151.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_87;
+        value           uniform $omega_87;
+    }
+
+    "exit_89.*|mucus_exit_153.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_89;
+        value           uniform $omega_89;
+    }
+
+    "exit_91.*|mucus_exit_159.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_91;
+        value           uniform $omega_91;
+    }
+
+    "exit_93.*|mucus_exit_161.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_93;
+        value           uniform $omega_93;
+    }
+
+    "exit_95.*|mucus_exit_169.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_95;
+        value           uniform $omega_95;
+    }
+
+    "exit_97.*|mucus_exit_167.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_97;
+        value           uniform $omega_97;
+    }
+
+    "exit_99.*|mucus_exit_181.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_99;
+        value           uniform $omega_99;
+    }
+
+    "exit_101.*|mucus_exit_179.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_101;
+        value           uniform $omega_101;
+    }
+
+    "exit_103.*|mucus_exit_177.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_103;
+        value           uniform $omega_103;
+    }
+
+    "exit_105.*|mucus_exit_175.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_105;
+        value           uniform $omega_105;
+    }
+
+    "exit_107.*|mucus_exit_171.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_107;
+        value           uniform $omega_107;
+    }
+
+    "exit_109.*|mucus_exit_173.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_109;
+        value           uniform $omega_109;
+    }
+
+    "exit_111.*|mucus_exit_187.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_111;
+        value           uniform $omega_111;
+    }
+    "exit_113.*|mucus_exit_189.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_113;
+        value           uniform $omega_113;
+    }
+
+    "exit_115.*|mucus_exit_185.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_115;
+        value           uniform $omega_115;
+    }
+
+    "exit_117.*|mucus_exit_183.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_117;
+        value           uniform $omega_117;
+    }
+
+    "exit_119.*|mucus_exit_191.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_119;
+        value           uniform $omega_119;
+    }
+
+    "exit_121.*|mucus_exit_193.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_121;
+        value           uniform $omega_121;
+    }
+
+    "exit_123.*|mucus_exit_201.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_123;
+        value           uniform $omega_123;
+    }
+
+    "exit_125.*|mucus_exit_199.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_125;
+        value           uniform $omega_125;
+    }
+
+    "exit_127.*|mucus_exit_195.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_127;
+        value           uniform $omega_127;
+    }
+    "exit_129.*|mucus_exit_197.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_129;
+        value           uniform $omega_129;
+    }
+
+    "exit_131.*|mucus_exit_203.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_131;
+        value           uniform $omega_131;
+    }
+
+    "exit_133.*|mucus_exit_205.*"
+    {
+        type            turbulentMixingLengthFrequencyInlet;
+        mixingLength    $exit_L_133;
+        value           uniform $omega_133;
+    }
+
+    "wall_.*"
+    {
+        type            omegaWallFunction; //t; //omegaWallFunction;
+        value           $internalField;
+    }
+}

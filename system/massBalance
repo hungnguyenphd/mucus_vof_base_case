@@ -1,0 +1,53 @@
+massBalance
+{
+    libs            (utilityFunctionObjects);
+    type            coded;
+    name            massBalance;
+
+    codeExecute
+    #{
+        // Lookup U
+        Info<< "Looking up field U\n" << endl;
+        const auto& U = mesh().lookupObject<volVectorField>("U");
+        Info<< "Looking up field alpha.mucus\n" << endl;
+        const auto& alphaMucus = mesh().lookupObject<volScalarField>("alpha.mucus");
+        // QMucusTotal = 1.67e-8 m3/s
+        // Total 36 outlets => 4.62964e-10 m3/s
+        Info << "Total Mucus Inlet Flowrate =  1.67e-8 m3/s" << endl;
+	
+	const auto mucusInFlowRate = -1.67e-08;
+
+        // For outlet patch
+        const label mucusO = mesh().boundaryMesh().findPatchID("entry.1");
+        const auto& mucusOutPatch = this->mesh().boundary()[mucusO];
+
+        // const auto mucusOutArea = gSum(mucusOutPatch.magSf());
+        // Info << "Calculated outlet mucus area = " << mucusOutArea 
+        //      << " m2" << endl << "Ground truth = 7.85398e-05 m2" << endl; 
+
+        const auto& alphaMucusOut = alphaMucus.boundaryField()[mucusO];
+        const auto& UpOut = U.boundaryField()[mucusO];
+        const vectorField nOut(mucusOutPatch.nf());
+        const auto mucusOutFlowRate = gSum((nOut & UpOut)*alphaMucusOut*mucusOutPatch.magSf());
+        Info << "Mucus Outlet Flowrate = " << mucusOutFlowRate << " m3/s" << endl;
+
+        const Time& runTime = mesh().time();
+        const scalar t = runTime.value();
+        if (t != 0.0)
+        {
+            const auto error = mag((mucusInFlowRate + mucusOutFlowRate)/mucusInFlowRate);
+            Info << "Relative error = " << error << endl;
+            if (error < 1e-40)
+            {
+                Info<< "Mucus Inlet Flowrate = Mucus Outlet Flowrate. "
+		    << "Solution converged. " << endl;
+		bool result=const_cast<Time&>(mesh().time()).writeNow();
+		FatalErrorInFunction
+                << "Simulation stopped."
+                << exit(FatalError);
+		//runTime.writeAndEnd();
+            }
+        }
+        
+    #};
+}
