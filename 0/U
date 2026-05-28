@@ -29,7 +29,7 @@ mucus_in #calc "$tot_mucus_in/36.0";
 //air_in #calc "$tot_air_in/36.0";
 boundaryField
 {
-    entry.*
+    entry.1
     {
         type            inletOutlet;
         inletValue      uniform (0 0 0);
